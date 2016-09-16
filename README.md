@@ -26,3 +26,11 @@ var szb = require("stevila-z-besedo")
 var converter = new szb(options);
 converter.convert(data);
 ```
+
+###options
+  **type**: (**number**, date, digit). Izberi tip pretvornika.
+  **decimalniSimbolPika**: poljuben parameter (true, **false**). V Sloveniji za decimalno ločilo uporabljamo decimalno vejico ',' (privzeto). Če želite z besedo zapisati števila, ki za decimalni simbol uporabljajo decimalno piko '.', parametru pripišite vrednost true.
+  **brezPresledkov**: poljuben parameter (true, **false**). Z besedo zapisana števila upoševajo pravila slovenskega knjižnjega jezika, ki med drugim narekujejo tudi, kako ločujemo zapisana števila s presledki. Če želite števila zapisati brez presledkov, parametru pripišite vrednost true.
+
+###data
+
