@@ -1,12 +1,26 @@
 {
   "name": "stevila-z-besedo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zapis števil, datumov in cifer z besedo.",
-  "keywords": ["števila", "datumi", "cifre", "število", "datum", "cifra", "zapis", "z", "besedo", "beseda"],
+  "keywords": [
+    "števila",
+    "datumi",
+    "cifre",
+    "število",
+    "datum",
+    "cifra",
+    "zapis",
+    "z",
+    "besedo",
+    "beseda"
+  ],
   "main": "src/stevila-z-besedo.js",
   "author": "Žiga Šebenik <ziga@sebenik.com> (www.sebenik.com)",
   "license": "MIT",
-  "files": ["src/stevila-z-besedo.js", "src/defs.js"],
+  "files": [
+    "src/stevila-z-besedo.js",
+    "src/defs.js"
+  ],
   "homepage": "http://stevilazbesedo.sebenik.com",
   "repository": {
     "type": "git",
