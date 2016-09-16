@@ -235,13 +235,8 @@ function validateNumber(currentNumber, string, options) {
   }
 
   // Check if string represent a number in scientific notation
-  // If so, number can't be greater than MAX_SAFE_INTEGER = 9007199254740991
   if (string.toLowerCase().indexOf("e") > -1) {
-    // if (Number(string) > Number.MAX_SAFE_INTEGER) {
-    // throw new Error(currentNumber + " is out of bounds.");
-    // }
     return scientificToString(string);
-    // return bignum(Number(string)).toString();
   }
 
   return string;
