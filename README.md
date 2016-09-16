@@ -48,6 +48,7 @@ var rezultat = converter.convert(data);
 | DD-MM-LLLL  | D-M-LLLL | DD-MM- | D-M- | DD- | D- |
 
 - **Zapis neobstoječega datuma (npr. 30.02.2000) ali datuma pred letom 1600 in po letu 9999 ni mogoč.**
+- **min/max število: "±999999999999999999999999999999999999999999999999999999999999999999,999999999999999999999999999999999999999999999999999999999999999999"
 
 ###rezultat
 Vektor(array) besed pretvorjenih števil/datumov v enakem vrstnem redu kot so bili podani.
