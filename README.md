@@ -28,9 +28,30 @@ converter.convert(data);
 ```
 
 ###options
-- **type**: (**number**, date, digit). Izberi tip pretvornika.
+- **type**: (**"number"**, "date", "digit"). Izberi tip pretvornika.
 - **decimalniSimbolPika**: poljuben parameter (true, **false**). V Sloveniji za decimalno ločilo uporabljamo decimalno vejico ',' (privzeto). Če želite z besedo zapisati števila, ki za decimalni simbol uporabljajo decimalno piko '.', parametru pripišite vrednost true.
 - **brezPresledkov**: poljuben parameter (true, **false**). Z besedo zapisana števila upoševajo pravila slovenskega knjižnjega jezika, ki med drugim narekujejo tudi, kako ločujemo zapisana števila s presledki. Če želite števila zapisati brez presledkov, parametru pripišite vrednost true.
 
 ###data
+Število/datum oz. vektor(array) števil/datmov, ki jih želimo zapisati z besedo.
 
+##Primer
+
+```
+var szb = require("stevila-z-besedo")
+var numberConverter = new szb({
+  "type": "number",
+  "decimalniSimbolPika": true
+});
+var stevila = [1, -1000, 2.12e7, 0.31];
+var zBesedo = converter.convert(data);
+
+console.log(zBesedo);
+```
+```
+// [ 'ena',
+//   'minus tisoč',
+//   'enaindvajset milijonov dvesto tisoč',
+//   'nič cela enaintrideset stotink'
+// ]
+```
