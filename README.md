@@ -1,5 +1,8 @@
 #Samodejni zapis števil z besedo.
 node.js module to convert numbers/dates/digits in to text (Slovene language)
+node.js modul to pretvorbo števil/datumov/cifer v tekst
+
+Povezava do spletnega API-ja, ki uporablja ta modul: [stevilazbesedo.sebenik.com](http://stevilazbesedo.sebenik.com)
 
 ##Zapis
 
@@ -80,7 +83,7 @@ console.log(zBesedo);
 //   'dvanajsti sedmi',
 //   'dvanajsti',
 //   'tretji enajsti',
-//   '31.2 is not a valid date form.' ]
+//   '31.2. is not a valid date form.' ]
 ```
 
 ###cifre
