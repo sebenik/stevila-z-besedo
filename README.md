@@ -24,7 +24,7 @@ npm install stevila-z-besedo
 ```
 var szb = require("stevila-z-besedo")
 var converter = new szb(options);
-converter.convert(data);
+var rezultat = converter.convert(data);
 ```
 
 ###options
@@ -34,6 +34,9 @@ converter.convert(data);
 
 ###data
 Število/datum oz. vektor(array) števil/datumov, ki jih želimo zapisati z besedo.
+
+###rezultat
+Vektor(array) besed pretvorjenih števil/datumov v enakem vrstnem redu kot so bili podani.
 
 ##Primer
 
@@ -51,8 +54,7 @@ console.log(zBesedo);
 // [ 'ena',
 //   'minus tisoč',
 //   'enaindvajset milijonov dvesto tisoč',
-//   'nič cela enaintrideset stotink'
-// ]
+//   'nič cela enaintrideset stotink' ]
 ```
 ###datumi
 ``` Javascript
@@ -68,8 +70,7 @@ console.log(zBesedo);
 //   'dvanajsti sedmi',
 //   'dvanajsti',
 //   'tretji enajsti',
-//   '31.2 is not a valid date form.',
-// ]
+//   '31.2 is not a valid date form.' ]
 ```
 
 ###cifre
@@ -83,7 +84,6 @@ var zBesedo = converter.convert(stevila);
 
 console.log(zBesedo);
 // [ 'ena dve tri štiri pet',
-//   'minus sedem celih osem ena'
-// ]
+//   'minus sedem celih osem ena' ]
 ```
 
