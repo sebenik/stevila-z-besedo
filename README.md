@@ -14,3 +14,15 @@ node.js module to convert numbers/dates/digits in to text (Slovene language)
 **Datumov:** 1.4.2000 → 'prvi četrti dva tisoč'
 
 **Cifer:** 46492 → 'štiri šest štiri devet dve'
+
+##Install
+```
+npm install stevila-z-besedo
+```
+
+##Uporaba
+```
+var szb = require("stevila-z-besedo")
+var converter = new szb(options);
+converter.convert(data);
+```
