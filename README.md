@@ -60,7 +60,7 @@ var szb = require("stevila-z-besedo");
 var dateConverter = new szb({
   "type": "date"
 });
-var datumi = ["1.1.2000", "12/7/", "12.", "03-11-", "31.2"];
+var datumi = ["1.1.2000", "12/7/", "12.", "03-11-", "31.2."];
 var zBesedo = converter.convert(datumi);
 
 console.log(zBesedo);
@@ -73,3 +73,17 @@ console.log(zBesedo);
 ```
 
 ###cifre
+``` Javascript
+var szb = require("stevila-z-besedo");
+var dateConverter = new szb({
+  "type": "digit"
+});
+var stevila = [12345, "-7,81"];
+var zBesedo = converter.convert(stevila);
+
+console.log(zBesedo);
+// [ 'ena dve tri štiri pet',
+//   'minus sedem celih osem ena'
+// ]
+```
+
