@@ -1,7 +1,7 @@
 #Samodejni zapis števil z besedo.
-node.js module to convert numbers/dates/digits in to text (Slovene language)
+Node.js module to convert numbers/dates/digits in to text (Slovene language).
 
-node.js modul to pretvorbo števil/datumov/cifer v tekst
+Node.js modul za pretvorbo števil/datumov/cifer v tekst.
 
 Povezava do spletnega API-ja, ki uporablja ta modul: [stevilazbesedo.sebenik.com](http://stevilazbesedo.sebenik.com)
 
@@ -100,4 +100,8 @@ console.log(zBesedo);
 // [ 'ena dve tri štiri pet',
 //   'minus sedem celih osem ena' ]
 ```
+## Licenca
+- [MIT License](https://github.com/sebenik/stevila-z-besedo/blob/master/LICENSE)
 
+## Avtor
+Žiga Šebenik [ziga@sebenik.com](mailto:ziga@sebenik.com)
