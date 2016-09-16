@@ -25,7 +25,7 @@ npm install stevila-z-besedo
 ```
 
 ##Uporaba
-```
+``` Javascript
 var szb = require("stevila-z-besedo")
 var converter = new szb(options);
 var rezultat = converter.convert(data);
