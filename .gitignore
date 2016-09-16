@@ -1,0 +1,16 @@
+### Folders ###
+.git/
+
+### Files ###
+tags
+tmux-client*
+.eslintrc
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
