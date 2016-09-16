@@ -167,7 +167,7 @@ function stringify2orLessDigits(number, gender) {
 
   var firstDigit = getFirstNdigits(number)
     , lastDigit = getLastNdigits(number)
-    , prefix = lastDigit === 0 ? "" : stringify2orLessDigits(lastDigit, "moski") + "in";
+    , prefix = lastDigit === 0 ? "" : stringify2orLessDigits(lastDigit, gender) + "in";
 
   if (firstDigit === 2) {
     return prefix + isPredefined(20);
