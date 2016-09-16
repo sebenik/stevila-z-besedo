@@ -37,6 +37,7 @@ converter.convert(data);
 
 ##Primer
 
+###števila
 ``` Javascript
 var szb = require("stevila-z-besedo");
 var numberConverter = new szb({
@@ -44,7 +45,7 @@ var numberConverter = new szb({
   "decimalniSimbolPika": true
 });
 var stevila = [1, -1000, 2.12e7, 0.31];
-var zBesedo = converter.convert(data);
+var zBesedo = converter.convert(stevila);
 
 console.log(zBesedo);
 // [ 'ena',
@@ -53,3 +54,22 @@ console.log(zBesedo);
 //   'nič cela enaintrideset stotink'
 // ]
 ```
+###datumi
+``` Javascript
+var szb = require("stevila-z-besedo");
+var dateConverter = new szb({
+  "type": "date"
+});
+var datumi = ["1.1.2000", "12/7/", "12.", "03-11-", "31.2"];
+var zBesedo = converter.convert(datumi);
+
+console.log(zBesedo);
+// [ 'prvi prvi dva tisoč',
+//   'dvanajsti sedmi',
+//   'dvanajsti',
+//   'tretji enajsti',
+//   '31.2 is not a valid date form.',
+// ]
+```
+
+###cifre
