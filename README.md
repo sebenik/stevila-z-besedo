@@ -36,8 +36,9 @@ var rezultat = converter.convert(data);
 Število/datum oz. vektor(array) števil/datumov, ki jih želimo zapisati z besedo.
 **Veljavne oblike datumov**
 
-| vDD/MM/LLLL | D/M/LLLL | DD/MM/ | D/M/ | DD/ | D/ |
+|             |          |        |      |     |    |
 |-------------|----------|--------|------|-----|----|
+| vDD/MM/LLLL | D/M/LLLL | DD/MM/ | D/M/ | DD/ | D/ |
 | DD.MM.LLLL  | D.M.LLLL | DD.MM. | D.M. | DD. | D. |
 | DD-MM-LLLL  | D-M-LLLL | DD-MM- | D-M- | DD- | D- |
 
