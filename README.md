@@ -102,7 +102,7 @@ console.log(zBesedo);
 //   'minus sedem celih osem ena' ]
 ```
 ## Licenca
-- [MIT License](https://github.com/sebenik/stevila-z-besedo/blob/master/LICENSE)
+- [MIT License](https://github.com/sebenik/stevila-z-besedo/blob/master/LICENSE.md)
 
 ## Avtor
 Žiga Šebenik [ziga@sebenik.com](mailto:ziga@sebenik.com)
