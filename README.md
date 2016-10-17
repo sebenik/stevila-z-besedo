@@ -63,7 +63,7 @@ var numberConverter = new szb({
   "decimalniSimbolPika": true
 });
 var stevila = [1, -1000, 2.12e7, 0.31];
-var zBesedo = converter.convert(stevila);
+var zBesedo = numberConverter.convert(stevila);
 
 console.log(zBesedo);
 // [ 'ena',
@@ -78,7 +78,7 @@ var dateConverter = new szb({
   "type": "date"
 });
 var datumi = ["1.1.2000", "12/7/", "12.", "03-11-", "31.2."];
-var zBesedo = converter.convert(datumi);
+var zBesedo = dateConverter.convert(datumi);
 
 console.log(zBesedo);
 // [ 'prvi prvi dva tisoč',
@@ -91,11 +91,11 @@ console.log(zBesedo);
 ###cifre
 ``` Javascript
 var szb = require("stevila-z-besedo");
-var dateConverter = new szb({
+var digitConverter = new szb({
   "type": "digit"
 });
 var stevila = [12345, "-7,81"];
-var zBesedo = converter.convert(stevila);
+var zBesedo = digitConverter.convert(stevila);
 
 console.log(zBesedo);
 // [ 'ena dve tri štiri pet',

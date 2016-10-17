@@ -142,6 +142,7 @@ function stringify(number, gender, exclude) {
     return p;
   }
 
+  gender = "moski";
   if (countNumberOfDigits(number) < 3) {
     return stringify2orLessDigits(number, gender);
   }
