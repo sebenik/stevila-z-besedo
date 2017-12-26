@@ -1,11 +1,11 @@
-#Samodejni zapis števil z besedo.
+# Samodejni zapis števil z besedo.
 Node.js module to convert numbers/dates/digits in to text (Slovene language).
 
 Node.js modul za pretvorbo števil/datumov/cifer v tekst.
 
 Povezava do spletnega API-ja, ki uporablja ta modul: [stevilazbesedo.sebenik.com](http://stevilazbesedo.sebenik.com)
 
-##Zapis
+## Zapis
 
 **Celih števil:** 3462543 → 'tri milijone štiristo dvainšestdeset tisoč petsto triinštirideset'
 
@@ -19,24 +19,24 @@ Povezava do spletnega API-ja, ki uporablja ta modul: [stevilazbesedo.sebenik.com
 
 **Cifer:** 46492 → 'štiri šest štiri devet dve'
 
-##Install
+## Install
 ```
 npm install stevila-z-besedo
 ```
 
-##Uporaba
+## Uporaba
 ``` Javascript
 var szb = require("stevila-z-besedo")
 var converter = new szb(options);
 var rezultat = converter.convert(data);
 ```
 
-###options
+### options
 - **type**: (**"number"**, "date", "digit"). Izberi tip pretvornika.
 - **decimalniSimbolPika**: poljuben parameter (true, **false**). V Sloveniji za decimalno ločilo uporabljamo decimalno vejico ',' (privzeto). Če želite z besedo zapisati števila, ki za decimalni simbol uporabljajo decimalno piko '.', parametru pripišite vrednost true.
 - **brezPresledkov**: poljuben parameter (true, **false**). Z besedo zapisana števila upoševajo pravila slovenskega knjižnjega jezika, ki med drugim narekujejo tudi, kako ločujemo zapisana števila s presledki. Če želite števila zapisati brez presledkov, parametru pripišite vrednost true.
 
-###data
+### data
 Število/datum oz. vektor(array) števil/datumov, ki jih želimo zapisati z besedo.
 
 - **Veljavne oblike datumov**
@@ -50,12 +50,12 @@ var rezultat = converter.convert(data);
 - **Zapis neobstoječega datuma (npr. 30.02.2000) ali datuma pred letom 1600 in po letu 9999 ni mogoč.**
 - **min/max število: "±999999999999999999999999999999999999999999999999999999999999999999,999999999999999999999999999999999999999999999999999999999999999999"**
 
-###rezultat
+### rezultat
 Vektor(array) besed pretvorjenih števil/datumov v enakem vrstnem redu kot so bili podani.
 
-##Primer
+## Primer
 
-###števila
+### števila
 ``` Javascript
 var szb = require("stevila-z-besedo");
 var numberConverter = new szb({
@@ -71,7 +71,7 @@ console.log(zBesedo);
 //   'enaindvajset milijonov dvesto tisoč',
 //   'nič cela enaintrideset stotink' ]
 ```
-###datumi
+### datumi
 ``` Javascript
 var szb = require("stevila-z-besedo");
 var dateConverter = new szb({
@@ -88,7 +88,7 @@ console.log(zBesedo);
 //   '31.2. is not a valid date form.' ]
 ```
 
-###cifre
+### cifre
 ``` Javascript
 var szb = require("stevila-z-besedo");
 var digitConverter = new szb({
